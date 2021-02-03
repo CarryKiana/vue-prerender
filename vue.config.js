@@ -14,7 +14,7 @@ module.exports = {
             // 设置为程序的静态输出目录
             staticDir: path.join(__dirname, 'dist'),
             // 设置要渲染的路由
-            routes: ['/'],
+            routes: ['/', '/another'],
             // 注入到window对象上的属性
             injectProperty: '__PRERENDER_INJECTED',
             // 自定义注入属性的内容

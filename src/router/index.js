@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 
 import index from '@/views/index'
 import test from '@/views/test'
+import another from '@/views/another'
 Vue.use(VueRouter)
 
 const routes = [
@@ -14,7 +15,12 @@ const routes = [
   {
     path: '/test',
     component: test,
-    meta: { title: '测试页' }
+    meta: { title: '普通页' }
+  },
+  {
+    path: '/another',
+    component: another,
+    meta: { title: '另一个预渲染的页面' }
   }
 ]
 
