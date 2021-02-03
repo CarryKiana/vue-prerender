@@ -27,7 +27,8 @@ const routes = [
 const router = new VueRouter({
   routes: [...routes],
   scrollBehavior: () => ({ y: 0 }),
-  base: process.env.BASE_URL
+  base: process.env.BASE_URL,
+  mode: 'history' // 多个预渲染页面需要开启history模式，否则虽然dist里为吗每个预渲染页面生成html, 但只有一个预渲染页面生效
 })
 
 export default router
