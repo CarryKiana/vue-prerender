@@ -42,7 +42,7 @@
       </div>
     </div>
    
-    <div class="content4"></div>
+    <div class="content4" @click="jump2Test"></div>
     <!-- <div class="bottom">
       <img class="img" src="@/assets/images/bottom.png" alt="">
     </div> -->
@@ -61,6 +61,10 @@ export default {
     changeActive(num) {
       console.log(num)
       this.active = num
+    },
+    // 跳转到没有启用预渲染的测试页面
+    jump2Test() {
+      this.$router.push({ path: '/test' })
     }
   }
 }
