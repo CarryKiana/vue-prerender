@@ -85,4 +85,7 @@ new Vue({
   router,
   store,
   render: h => h(App),
+  mounted () {
+    document.dispatchEvent(new Event('custom-render-trigger')) // 用来触发自定义的
+  }
 }).$mount('#app')
